@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(178, 202, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub{
+    width: 80%;
+    height: 80%;
+    background-image: url(white.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav{
+    width: 98%;
+    height: 15%;
+    border-radius: 8px;
+    background-color: cadetblue;
+}
+#nav{
+    width: 100%;
+    background-color: transparent !important;
+}
+#todo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+#other{
+    color: white;
+    margin-left: 10px;
+}
+#search{
+    background-color: white;
+    color: cadetblue;
+}
+.down{
+    width: 50%;
+    height: 80%;
+    border-radius: 8px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+@media all and (max-width:600px){
+    .down{
+        width: 98%;
+    }
+}
+.routine{
+    width: 90%;
+    height: 15%;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.typing{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15%
+}
+#taskInput{
+    width: 80%;
+    height: 60%;
+    border: 0;
+    background-color: cadetblue;
+    color: white;
+}
+button{
+    background-color: cadetblue;
+    color: white;
+    border: 0;
+    height: 60%;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: rgb(2, 71, 73);
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+button.edit-btn, button.save-btn, button.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    color: #f1c40f;
+}
+
+button.save-btn {
+    color: #2ecc71;
+}
+
+button.delete-btn {
+    color: #e74c3c;
+}
